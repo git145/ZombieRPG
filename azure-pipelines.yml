@@ -9,5 +9,5 @@ pool:
 steps:
 - script:
     git pull https://github.com/git145/ZombieRPG.git master
-    git push https:$(githubpersonaltoken)//@github.com/git145/ZombieRPG.git HEAD:master
+    git push https://$(githubpersonaltoken)@github.com/git145/ZombieRPG.git HEAD:master
   displayName: 'Push to GitHub'
