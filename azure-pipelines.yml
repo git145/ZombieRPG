@@ -7,5 +7,6 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: git push https://github.com/git145/ZombieRPG.git HEAD:master
+- script: git pull https://github.com/git145/ZombieRPG.git master
+- script: git push https:git//@github.com/git145/ZombieRPG.git HEAD:master
   displayName: 'Push to GitHub'
