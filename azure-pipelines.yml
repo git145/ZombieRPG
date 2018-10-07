@@ -12,6 +12,6 @@ steps:
   displayName: 'Pull from GitHub'
 
 - script:
-    echo $(githubpersonaltoken)
-    git push https://$(githubpersonaltoken)@github.com/git145/ZombieRPG.git HEAD:master
+    echo $(gitHubPersonalToken)
+    git push https://$(gitHubPersonalToken)@github.com/git145/ZombieRPG.git HEAD:master
   displayName: 'Push to GitHub'
