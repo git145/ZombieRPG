@@ -1,2 +1,2 @@
 # ZombieRPG
-A zombie-themed role-playing video game
+A zombie-themed role-playing video game.
