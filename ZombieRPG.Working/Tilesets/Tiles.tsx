@@ -14,7 +14,7 @@
   <image width="48" height="96" source="../Tiles/Tiles/Doors/Door_001.png"/>
  </tile>
  <tile id="7">
-  <image width="48" height="96" source="../Tiles/Tiles/Heroes/Hero_001/Hero_001.png"/>
+  <image width="48" height="96" source="../Tiles/Tiles/Heroes/Hero_001/Hero_001_Back.png"/>
  </tile>
  <tile id="8">
   <image width="48" height="48" source="../Tiles/Tiles/Shadow/Shadow_001.png"/>
