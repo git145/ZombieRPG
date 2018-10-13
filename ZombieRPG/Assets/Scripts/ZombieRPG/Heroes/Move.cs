@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ZombieRPG
+﻿namespace ZombieRPG
 {
     public class Move
     {
