@@ -14,19 +14,22 @@ public class MoveController : MonoBehaviour {
 
     // The speed that the player will move at
     [SerializeField]
-    private float speed = 2f;
+    private float speed = 2;
 
     // The Rigidbody component on the object
     private Rigidbody2D objectRigidbody;
 
-    private Vector2 target;
+    private Vector2 positionStart;
+    private Vector2 positionEnd;
+
+    private float tileSize = GameController.tileSize;
 
     // Use this for initialization
     void Start () {
         // Reference the Rigidbody component on the player
         objectRigidbody = GetComponent<Rigidbody2D>();
 
-        target = objectRigidbody.position;
+        positionEnd = objectRigidbody.position;
 
         CanMove = true;
     }
@@ -34,6 +37,12 @@ public class MoveController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Move();
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("Collision");
+        positionEnd = positionStart;
     }
 
     // Moves the player
@@ -47,21 +56,23 @@ public class MoveController : MonoBehaviour {
 
             if ((_movementX != 0) && (_movementY == 0))
             {
-                target += new Vector2 (0.48f * _movementX, 0);
+                positionStart = positionEnd;
+                positionEnd += new Vector2 (tileSize * _movementX, 0);
                 CanMove = false;
             }
             else if ((_movementX == 0) && (_movementY != 0))
             {
-                target += new Vector2(0, 0.48f * _movementY);
+                positionStart = positionEnd;
+                positionEnd += new Vector2(0, tileSize * _movementY);
                 CanMove = false;
             }
         }
 
         Vector2 objectRigidbodyposition = objectRigidbody.position;
 
-        objectRigidbody.position = Vector3.MoveTowards(objectRigidbodyposition, target, Time.deltaTime * speed);
+        objectRigidbody.position = Vector3.MoveTowards(objectRigidbodyposition, positionEnd, Time.deltaTime * speed);
 
-        if (objectRigidbodyposition == target)
+        if (objectRigidbodyposition == positionEnd)
         {
             CanMove = true;
         }
