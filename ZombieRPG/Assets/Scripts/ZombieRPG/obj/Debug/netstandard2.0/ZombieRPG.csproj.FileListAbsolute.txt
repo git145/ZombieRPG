@@ -1,9 +1,0 @@
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\bin\Debug\netstandard2.0\ZombieRPG.deps.json
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\bin\Debug\netstandard2.0\ZombieRPG.dll
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\bin\Debug\netstandard2.0\ZombieRPG.pdb
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.csprojAssemblyReference.cache
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.csproj.CoreCompileInputs.cache
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.AssemblyInfoInputs.cache
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.AssemblyInfo.cs
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.dll
-C:\Users\owner\Documents\Games\ZombieRPG\ZombieRPG\Assets\Scripts\ZombieRPG\obj\Debug\netstandard2.0\ZombieRPG.pdb
