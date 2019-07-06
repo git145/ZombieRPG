@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 33a270d95c15b75459966aef1217a3a0
+guid: ee3308a33abd7a24bbb3cae4cc596c90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5661421298061493793
-    second: Sprite_Tent_Floor
+      213: -6075581729083872039
+    second: Spritesheet_Effects_Shadow_50
   - first:
-      213: -264338903746302182
-    second: Sprite_Tent_Wall
+      213: -2822479855728551025
+    second: Spritesheet_Effects_Shadow_25
+  - first:
+      213: -7323677981483115945
+    second: Spritesheet_Effects_Block
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -123,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Tent_Floor
+      name: Spritesheet_Effects_Shadow_50
       rect:
         serializedVersion: 2
         x: 0
         y: 144
         width: 48
-        height: 48
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f1ede1e3afaf34187164a90f0ed7a6
-      internalID: -5661421298061493793
+      spriteID: c10f0b8294047f14a947597a96048717
+      internalID: -6075581729083872039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Tent_Wall
+      name: Spritesheet_Effects_Shadow_25
       rect:
         serializedVersion: 2
         x: 48
@@ -158,8 +161,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df9abe9125cbc4b4ebda575704f15ad1
-      internalID: -264338903746302182
+      spriteID: 1250b43923563f14db60f41ffa7ef637
+      internalID: -2822479855728551025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Effects_Block
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8823b5d7f93a34a8d0c52e265310c8
+      internalID: -7323677981483115945
       vertices: []
       indices: 
       edges: []
@@ -167,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f384422ecc7e8624a9335145f81d0bca
+    spriteID: 9e15ce245eed3c643a47b6bae29646e6
     internalID: 0
     vertices: []
     indices: 
