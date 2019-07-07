@@ -44,12 +44,12 @@ TagManager:
   - name: Floor
     uniqueID: 116065057
     locked: 0
+  - name: Effect
+    uniqueID: 3852629499
+    locked: 0
   - name: Items
     uniqueID: 3228991717
     locked: 0
   - name: Units
     uniqueID: 3144739521
-    locked: 0
-  - name: Effect
-    uniqueID: 3852629499
     locked: 0

@@ -10,17 +10,23 @@ public class Player : MovingObject
 
     private void Update()
     {
-        int directionX = (int)(Input.GetAxisRaw("Horizontal"));
-        int directionY = (int)(Input.GetAxisRaw("Vertical"));
-
-        if (directionX != 0)
+        if (GameManager.instance.playerCanMove && !isMoving)
         {
-            directionY = 0;
+            int directionX = (int)(Input.GetAxisRaw("Horizontal"));
+            int directionY = (int)(Input.GetAxisRaw("Vertical"));
+
+            if (directionX != 0)
+            {
+                directionY = 0;
+            }
+
+            if (directionX != 0 || directionY != 0)
+            {
+                Move(directionX, directionY);
+            }
         }
-
-        if (directionX != 0 || directionY != 0)
-        {
-            Move((float)(directionX * 0.9), (float)(directionY * 0.9));
+        else if (isMoving && (transform.position == positionEndGlobal)) {
+            isMoving = false;
         }
     }
 

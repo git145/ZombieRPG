@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogTestLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 8335265136186123181, guid: 9a15422b0a8ae0640bc53d89ddb4fcd1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8335265136186123183, guid: 9a15422b0a8ae0640bc53d89ddb4fcd1,
         type: 3}
       propertyPath: m_LocalPosition.x

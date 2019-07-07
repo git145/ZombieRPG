@@ -6,7 +6,7 @@ public class Loader : MonoBehaviour
 
     void Awake()
     {
-        if (GameManager.gameManager == null)
+        if (GameManager.instance == null)
         {
             Instantiate(gameManager);
         }

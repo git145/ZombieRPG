@@ -2,13 +2,15 @@
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager gameManager = null;
+    public static GameManager instance = null;
 
     private BoardManager boardManager;
 
     public GameObject[] environment;
 
     public GameObject player;
+
+    public bool playerCanMove = true;
 
     public void Awake()
     {
@@ -23,11 +25,11 @@ public class GameManager : MonoBehaviour
 
     private void EnforceSingleton()
     {
-        if (gameManager == null)
+        if (instance == null)
         {
-            gameManager = this;
+            instance = this;
         }
-        else if (gameManager != this)
+        else if (instance != this)
         {
             Destroy(gameObject);
         }

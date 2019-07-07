@@ -5,6 +5,8 @@ public abstract class MovingObject : MonoBehaviour
 {
     public float moveTime = 0.1f;
 
+    public GameObject sprite;
+
     public LayerMask blockingLayer;
 
     private BoxCollider2D boxCollider;
@@ -12,7 +14,11 @@ public abstract class MovingObject : MonoBehaviour
 
     private float inverseMoveTime;
 
-    RaycastHit2D detectHit;
+    private RaycastHit2D detectHit;
+
+    protected Vector3 positionEndGlobal;
+
+    protected bool isMoving;
 
     protected virtual void Start()
     {
@@ -23,19 +29,21 @@ public abstract class MovingObject : MonoBehaviour
         inverseMoveTime = 1f / moveTime;
     }
 
-    protected bool Move(float directionX, float directionY)
+    protected bool Move(int directionX, int directionY)
     {
         bool isHit = false;
 
-        Vector2 positionStart = transform.position;
+        Vector3 positionStart = transform.position;
 
-        Vector2 positionEnd = positionStart + new Vector2(directionX, directionY);
+        positionEndGlobal = positionStart + new Vector3(directionX, directionY, 0);
 
-        SetDetectHit(positionStart, positionEnd);
+        SetDetectHit(positionStart, positionEndGlobal);
 
         if (detectHit.transform == null)
         {
-            StartCoroutine(SmoothMovement(positionEnd));
+            StartCoroutine(SmoothMovement(positionEndGlobal));
+
+            isMoving = true;
 
             isHit = true;
         }
@@ -43,7 +51,7 @@ public abstract class MovingObject : MonoBehaviour
         return isHit;
     }
 
-    private void SetDetectHit(Vector2 positionStart, Vector2 positionEnd)
+    private void SetDetectHit(Vector3 positionStart, Vector3 positionEnd)
     {
         boxCollider.enabled = false;
 
