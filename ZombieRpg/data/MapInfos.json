@@ -1,6 +1,7 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Town One","order":3,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":1,"expanded":true,"name":"Route 1","order":4,"parentId":0,"scrollX":819,"scrollY":461},
 {"id":2,"expanded":true,"name":"Base Camp","order":1,"parentId":0,"scrollX":819,"scrollY":461},
-{"id":3,"expanded":true,"name":"Base Camp - Ammo Tent","order":2,"parentId":2,"scrollX":819,"scrollY":461}
+{"id":3,"expanded":true,"name":"Base Camp - Ammo Tent","order":2,"parentId":2,"scrollX":819,"scrollY":461},
+{"id":4,"expanded":false,"name":"Base Camp - Route 1","order":3,"parentId":2,"scrollX":832,"scrollY":640}
 ]
